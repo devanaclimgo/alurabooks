@@ -88,10 +88,14 @@ nav .rodape__lista {
   color: var(--preto-font);
   transition: color 0.25s;
   position: relative;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
 }
 
 .rodape__lista__link:hover {
 color: var(--cinza-escuro);
+border-bottom-color: var(--preto);
+  animation: underline-animation 0.3s ease-in-out;
 }
 
 .rodape__lista__link::after {
@@ -106,6 +110,17 @@ transition: 0.45s;
 
 .rodape__lista__link:hover::after {
   scale: 1 1;
+}
+
+@keyframes rodape__lista__link{
+0% {
+  border-bottom-width: 0;
+}
+
+100% {
+  border-bottom-width: 2px;
+}
+
 }
 
 @media screen and (min-width: 1728px) {
