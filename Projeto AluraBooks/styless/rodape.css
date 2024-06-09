@@ -68,6 +68,32 @@
   display: none;
 }
 
+.rodape__lista__link {
+  padding: 0.5rem 0.75rem;
+  font-size: 14px;
+  color: var(--preto-font);
+  transition: color 0.25s;
+  position: relative;
+}
+
+.rodape__lista__link:hover {
+color: var(--branco);
+}
+
+.rodape__lista__link::after {
+position: absolute;
+content: "";
+inset: 0;
+background: var(--preto);
+scale: 1 0;
+z-index: -1;
+transition: 0.45s;
+}
+
+.rodape__lista__link:hover::after {
+  scale: 1 1;
+}
+
 @media screen and (min-width: 1728px) {
   .rodape {
     padding: 2em 15em;

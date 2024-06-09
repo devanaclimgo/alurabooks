@@ -28,7 +28,6 @@
   margin: 0.5em 0;
 }
 
-
 .container__popup {
   background-color: var(--branco);
   padding: 1em;
@@ -36,11 +35,11 @@
   justify-content: space-between;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 25%);
-  }
+}
 
 .container__popup__texto {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -48,14 +47,14 @@ flex-direction: column;
   font-size: 16px;
   font-weight: 700;
   color: var(--laranja);
-  font-family: var( --fonte-principal);
+  font-family: var(--fonte-principal);
   margin-bottom: 0.5em;
 }
 
 .container__popup__nome {
   font-size: 18px;
   font-weight: 700;
-  font-family: var( --fonte-principal);
+  font-family: var(--fonte-principal);
   color: var(--azul-degrade);
   margin-bottom: 0.5em;
 }
@@ -63,7 +62,7 @@ flex-direction: column;
 .container__popup__descricao {
   font-size: 14px;
   font-weight: 400;
-  font-family: var( --fonte-principal);
+  font-family: var(--fonte-principal);
   margin-bottom: 0.5em;
 }
 
@@ -97,6 +96,10 @@ flex-direction: column;
   background-color: var(--laranja-claro);
 }
 
+.container__popup__img {
+  gap: 4px;
+}
+
 @media screen and (min-width: 1024px) {
   .carrossel__titulo {
     font-size: 26px;
@@ -119,36 +122,39 @@ flex-direction: column;
 }
 
 .container__popup {
-  width: 40%;
-margin: 2em auto;
+  width: 70%;
+  margin: 2em auto;
 }
 .container__popup__descricao {
   font-size: 16px;
 }
 
-@media screen and (min-width: 1728px) {
-
-.carrossel__container {
+.container__card {
   display: flex;
-  margin: 0 8vw 3em 8vw;
-  align-items: center;
+  flex-direction: row;
 }
 
-.swiper-pagination {
-  margin: 1em 0 -3em 0;
-}
+@media screen and (min-width: 1728px) {
+  .carrossel__container {
+    display: flex;
+    margin: 0 8vw 3em 8vw;
+    align-items: center;
+  }
 
-.container__popup__titulo {
-  font-size: 30px;
-}
+  .swiper-pagination {
+    margin: 1em 0 -3em 0;
+  }
 
-.container__popup__descricao {
-  font-size: 18px;
-}
+  .container__popup__titulo {
+    font-size: 30px;
+  }
 
-.container__popup {
-  width: 60%;
-  margin-left: 3em;
-}
+  .container__popup__descricao {
+    font-size: 18px;
+  }
 
+  .container__popup {
+    width: 60%;
+    margin-left: 3em;
+  }
 }
