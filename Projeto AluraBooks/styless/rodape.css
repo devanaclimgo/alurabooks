@@ -6,6 +6,8 @@
 .rodape {
   background-color: var(--cinza);
   padding: 1em;
+  text-decoration: none;
+  text-decoration-line: none;
 }
 
 .rodape__titulo {
@@ -15,7 +17,7 @@
   font-family: var(--fonte-principal);
 }
 
-.rodape__lista {
+nav, .rodape__nav .rodape__lista {
   display: none;
 }
 
@@ -28,6 +30,10 @@
     display: flex;
     gap: 5em;
     padding: 2em 1em;
+  }
+
+  nav, .rodape__nav .rodape__lista {
+    display: block;
   }
 
   .rodape__lista {
