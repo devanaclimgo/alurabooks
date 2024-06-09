@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.carrossel__titulo {
+  background-color: var(--branco);
+  color: var(--laranja);
+  font-family: var(--fonte-principal);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: initial;
+  margin: 0.5em 0;
+}
+
+
+.container__popup {
+  background-color: var(--branco);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 25%);
+  }
+
+.container__popup__texto {
+  display: flex;
+flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__popup__titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--laranja);
+  font-family: var( --fonte-principal);
+  margin-bottom: 0.5em;
+}
+
+.container__popup__nome {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var( --fonte-principal);
+  color: var(--azul-degrade);
+  margin-bottom: 0.5em;
+}
+
+.container__popup__descricao {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var( --fonte-principal);
+  margin-bottom: 0.5em;
+}
+
+.container__popup__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__popup__img__img {
+  width: auto;
+  height: auto;
+  margin-left: 0.5em;
+}
+
+.container__popup__img__link {
+  text-decoration: none;
+  color: var(--branco);
+  background-color: var(--laranja);
+  padding: 1em 2em;
+  margin-left: 0.5em;
+}
+
+.container__popup__estrelas {
+  width: 91px;
+  height: 15px;
+  margin-bottom: 0.5em;
+}
+
+.container__popup__img__link:hover {
+  background-color: var(--laranja-claro);
+}
+
+@media screen and (min-width: 1024px) {
+  .carrossel__titulo {
+    font-size: 26px;
+  }
+
+  .swiper-slide {
+    margin: 2em 0 3em 0;
+  }
+
+  .swiper-slide img {
+    width: 60%;
+    padding: 5em;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    top: 60%;
+  }
+}
+
+.container__popup {
+  width: 40%;
+margin: 2em auto;
+}
+.container__popup__descricao {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1728px) {
+
+.carrossel__container {
+  display: flex;
+  margin: 0 8vw 3em 8vw;
+  align-items: center;
+}
+
+.swiper-pagination {
+  margin: 1em 0 -3em 0;
+}
+
+.container__popup__titulo {
+  font-size: 30px;
+}
+
+.container__popup__descricao {
+  font-size: 18px;
+}
+
+.container__popup {
+  width: 60%;
+  margin-left: 3em;
+}
+
+}

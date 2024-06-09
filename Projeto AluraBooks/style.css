@@ -1,0 +1,31 @@
+@import url("styless/header.css");
+@import url("styless/banner.css");
+@import url("styless/carrossel.css");
+@import url("styless/topicos.css");
+@import url("styless/contato.css");
+@import url("styless/rodape.css");
+@import url("buttons.js");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-de-fundo: #ebecee;
+  --branco: #ffff;
+  --laranja: #eb9b00;
+  --laranja-claro: #F0B76B;
+  --preto: #000;
+  --preto-font: #474646;
+  --cinza: #f9f9f9;
+  --cinza-escuro: #858585;
+  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --fonte-principal: "Poppins", sans-serif;
+  --fonte-josefin: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+}
